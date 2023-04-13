@@ -127,13 +127,13 @@ with open('style.css')as f:
 st.title('Map of SSM')  #center align?
 
 # call to render Folium map in Streamlit
-st_data = st_folium(m,width='95%')
+st_data = st_folium(m,width='90%',height=500)
 #print('Map Data')
 #print(st_data)
 
 if 'center' in st_data:
   lat, lng = (st_data['center']['lat'], st_data['center']['lng'])
-  curr_loc = "Coord: {}, {}".format(lat, lng)
+  curr_loc = "{}, {}".format(lat, lng)
   st.text(curr_loc)
 
   dist_list = []
