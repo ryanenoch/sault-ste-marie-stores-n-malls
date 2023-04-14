@@ -1,3 +1,9 @@
+/*remove extra space before title*/
+.block-container {
+            padding-top: 0rem;
+        }
+
+
 /*Styling for scrollbar*/
 ::-webkit-scrollbar {
                       width: 20px;
