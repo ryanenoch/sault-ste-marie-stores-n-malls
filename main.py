@@ -90,7 +90,7 @@ main_obj = folium.GeoJson(
 
 #Adds option to show user location on map
 userloc = plugins.LocateControl(
-  auto_start=True,
+  auto_start=False,
   flyTo=True,
   enableHighAccuracy=True,
   drawCircle=True,
